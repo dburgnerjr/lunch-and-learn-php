@@ -25,7 +25,7 @@ final class AlliterationTest extends \PHPUnit_Framework_TestCase
         $phrase = $alliteration->getPhrase('p', 2);
         $words = explode(' ', $phrase);
         $this->assertSame(2, count($phrase));
-        $this->assertSame('p', substr($words[0], 0, 1));
-        $this->assertSame('p', substr($words[1], 0, 1));
+        $this->assertSame('P', substr($words[0], 0, 1));
+        $this->assertSame('P', substr($words[1], 0, 1));
     }
 }
