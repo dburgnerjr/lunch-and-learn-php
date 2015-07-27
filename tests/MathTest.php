@@ -63,12 +63,9 @@ final class MathTest extends \PHPUnit_Framework_TestCase
 		Math::sub(3.5, 2);
 	}
 
-
     /**
      * Verifies Addition
      * @test
-     * @expectedException \InvalidArgumentException
-
      */
     public function test_addition()
     {
