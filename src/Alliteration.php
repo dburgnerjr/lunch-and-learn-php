@@ -4,7 +4,7 @@ namespace Chadicus;
 
 class Alliteration
 {
-    public function getAlliteration($prefix, $words = 2)
+    public function getPhrase($prefix, $words = 2)
     {
 
     }

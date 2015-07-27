@@ -12,17 +12,17 @@ use Chadicus\Alliteration;
 final class AlliterationTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * Verify basic behavior of getAlliteration()
+     * Verify basic behavior of getPhrase()
      *
      * @test
-     * @covers ::getAlliteration
+     * @covers ::getPhrase
      *
      * @return void
      */
-    public function getAlliteration()
+    public function getPhrase()
     {
         $alliteration = new Alliteration();
-        $phrase = $alliteration->getAlliteration('p', 2);
+        $phrase = $alliteration->getPhrase('p', 2);
         $words = explode(' ', $phrase);
         $this->assertSame(2, count($phrase));
         $this->assertSame('p', substr($words[0], 0, 1));
