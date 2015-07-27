@@ -12,7 +12,7 @@ abstract class Math
         }
         return ($a * $b);
     }
-	public static function sub($x, $y)
+    public static function sub($x, $y)
     {
         if (!is_int($x) || !is_int($y)) {
             throw new \InvalidArgumentException('$x and $y must be integers');

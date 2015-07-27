@@ -101,5 +101,4 @@ class User
         $this->email = $email;
         return $this;
     }
-
 }
