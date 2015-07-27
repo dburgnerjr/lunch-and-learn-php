@@ -1,7 +1,9 @@
 <?php
+namespace Chadicus;
+
 try {
     if (!file_exists('myfile.txt')) {
-        throw new \Exception('myfile.txt does not exist');
+        throw new Exception('myfile.txt does not exist');
     }
 
     $handle = fopen('myfile.txt', 'r');
@@ -9,7 +11,13 @@ try {
         throw new \Exception('Unable to open myfile.txt for reading');
     }
 
+    /*
+
+        LOTS MORE CODE THAT COULD THROW EXCEPTIONS
+
+    */
+
 } catch (\Exception $e) {
-    echo "Something went wrong\n";
+    echo $e->getMessage();
     //something went wrong
 }

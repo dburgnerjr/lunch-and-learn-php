@@ -6,4 +6,8 @@ function handleException(\Exception $e) {
 
 set_exception_handler('handleException');
 
-throw new \Exception('something went wrong');
+try {
+    throw new \Exception('something went wrong');
+} catch (\Exception $e) {
+    echo "Exception handled by catch\n";
+}
